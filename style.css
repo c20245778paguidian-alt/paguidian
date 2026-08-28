@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px;
+    margin: 50px;
+}
+
+main section {
+    flex: 1;
+    min-width: 288px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#services {
+    padding: 0 50px;
+
+}
