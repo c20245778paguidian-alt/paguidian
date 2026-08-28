@@ -9,15 +9,17 @@ ul {
 nav {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
 
 }
 
 nav ul {
     display: flex;
     gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 main {
@@ -26,7 +28,8 @@ main {
     gap: 30px;
     padding: 50px;
     margin: 50px;
-    background-color: aquamarine;
+    max-width: 1200px;
+
 }
 
 main section {
@@ -43,7 +46,32 @@ form {
 
 }
 
-#services {
-    padding: 0 50px;
+@media (max-width:600px) {
+    nav {
+        flex-derection: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-derection: column;
+        text-align: center;
+    }
+
+    main {
+        padding: 15px;
+        margin: 10px;
+        gap: 10px;
+    }
+
+    main section {
+        flex: 1 1 100%;
+        min-width: 0;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 100px;
+        color: red;
+    }
 
 }
