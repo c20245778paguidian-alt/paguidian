@@ -95,7 +95,7 @@ nav a:hover {
 }
 
 button {
-    transition: background-color 0.3s ease;
+    transition: background-color 1s ease;
     background-color: black;
     color: white;
     border-radius: 10px;
