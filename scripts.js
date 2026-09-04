@@ -23,8 +23,10 @@ function greet(greeting, name) {
 
 console.log(greet("mayung aga", ["jaysonnet", "bai", "soy", "tol,"]));
 
-const heading = document.querySelector("h1");
-console.log(heading);
+const heading = document.querySelector("title");
+heading.textContent = "your fathers name is jaysonnet";
+console.log(heading.textContent);
+
 
 const contactheading = document.querySelector("#contact h2");
 console.log(contactheading);
