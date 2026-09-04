@@ -1,3 +1,4 @@
+
 console.log("Hello, World!");
 console.log("from scripts.js file.");
 
@@ -25,6 +26,10 @@ console.log(greet("mayung aga", ["jaysonnet", "bai", "soy", "tol,"]));
 
 const heading = document.querySelector("title");
 heading.textContent = "your fathers name is jaysonnet";
+heading.style.color = "red";
+heading.style.backgroundColor = "blue";
+heading.style.fontSize = "100px";
+
 console.log(heading.textContent);
 
 
