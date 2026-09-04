@@ -12,15 +12,23 @@ console.log(`my phone number is ${number}.`);
 console.log(`my address is ${address}.`);
 console.log(67);
 
-function greet(greeting, names) {
-    if (Array.isArray(names)) {
-        names = names.join(",");
+function greet(greeting, name) {
+    if (Array.isArray(name)) {
+        name = name.join(",");
     }
-    return `${greeting} sa inyu, ${names}!`;
+    return `${greeting} sa inyu, ${name}!`;
 
-
-
+    { }
 }
 
 console.log(greet("mayung aga", ["jaysonnet", "bai", "soy", "tol,"]));
 
+const heading = document.querySelector("h1");
+console.log(heading);
+
+const contactheading = document.querySelector("#contact h2");
+console.log(contactheading);
+
+
+const servicesheading = document.querySelector("#services h2");
+console.log(servicesheading);
