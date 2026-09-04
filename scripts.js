@@ -1,41 +1,59 @@
+console.log("hello world.");
+console.log("from script.js file.");
 
-console.log("Hello, World!");
-console.log("from scripts.js file.");
-
-const myname = "jaysonnet";
-const number = "09123456789";
-const address = "Cebu City, Philippines";
-let myage = 20;
-let age = 16;
-
-console.log(`my name is ${myname} and my age is ${myage} years old.`);
-console.log(`my phone number is ${number}.`);
-console.log(`my address is ${address}.`);
+const myName = "REY";
+let age = 60;
+age = 21;
+number = 98765432;
+const address = "brgy 1 pob, manapla";
+console.log(`Name: ${myName}`);
+console.log(`age: ${age}`);
+console.log(`address: ${address}`);
 console.log(67);
 
-function greet(greeting, name) {
-    if (Array.isArray(name)) {
-        name = name.join(",");
-    }
-    return `${greeting} sa inyu, ${name}!`;
 
-    { }
+function greet(greetings, name = []) {
+    if (Array.isArray(name)) {
+        name = name.join(", ");
+        return `${greetings} sa enyu ${name}`;
+    }
+    console.log(greet("mayung aga", ["REY", "Bai", "Soy", "Tol", "Erp",]));
 }
 
-console.log(greet("mayung aga", ["jaysonnet", "bai", "soy", "tol,"]));
-
-const heading = document.querySelector("title");
-heading.textContent = "your fathers name is jaysonnet";
-heading.style.color = "red";
-heading.style.backgroundColor = "blue";
+const heading = document.querySelector("h1");
+heading.textContent = "RONILO PENDON";
+heading.style.color = "purple";
+heading.style.backgroundColor = "yellow";
 heading.style.fontSize = "100px";
+console.log(heading);
 
-console.log(heading.textContent);
+heading.addEventListener("click", function () {
+    heading.style.color = "red";
+    console.log("Heading was clicked.");
+});
+
+const contactHeading = document.querySelector("#contact h2");
+console.log(contactHeading);
+
+const projectHeading = document.querySelector("#services h2");
+console.log(projectHeading);
+
+const toggleButton = document.querySelector('#switch');
+const body = document.querySelector('body');
+let isOff = false;
+
+toggleButton.addEventListener("click", function () {
+    isOff = !isOff;
+
+    if (isOff) {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+    } else {
+        body.style.backgroundColor = "white";
+        body.style.color = "black"
+    }
+})
 
 
-const contactheading = document.querySelector("#contact h2");
-console.log(contactheading);
 
 
-const servicesheading = document.querySelector("#services h2");
-console.log(servicesheading);
