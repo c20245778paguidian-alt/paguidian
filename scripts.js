@@ -21,7 +21,7 @@ function greet(greetings, name = []) {
 }
 
 const heading = document.querySelector("h1");
-heading.textContent = "RONILO PENDON";
+heading.textContent = "albert paguidian";
 heading.style.color = "purple";
 heading.style.backgroundColor = "yellow";
 heading.style.fontSize = "100px";
