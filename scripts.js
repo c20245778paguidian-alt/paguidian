@@ -21,7 +21,11 @@ function greet(greetings, name = []) {
 }
 
 const heading = document.querySelector("h1");
+<<<<<<< HEAD
 heading.textContent = "albert paguidian";
+=======
+heading.textContent = "ALBERT PAGUIDIAN";
+>>>>>>> try-new-colors
 heading.style.color = "purple";
 heading.style.backgroundColor = "yellow";
 heading.style.fontSize = "100px";
